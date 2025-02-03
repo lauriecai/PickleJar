@@ -28,3 +28,15 @@ app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
 /* FILE STORAGE */
 const upload = multer({ storage });
+
+/* MONGOOSE SETUP */
+const PORT = process.env.PORT || 6001;
+
+mongoose
+  .connect(process.env.MONGO_URL)
+  .then(() =>
+    app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
+  )
+  .catch((error) =>
+    console.log(`Unable to connect to server: ${error.message}`)
+  );
