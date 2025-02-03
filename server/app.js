@@ -7,6 +7,7 @@ import mongoose from "mongoose";
 import morgan from "morgan";
 import multer from "multer";
 import path from "path";
+import storage from "./cloudinary/index.js";
 
 /* CONFIGURATIONS */
 const __filename = fileURLToPath(import.meta.url);
@@ -24,3 +25,6 @@ app.use(cors());
 app.use(morgan("common"));
 
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
+
+/* FILE STORAGE */
+const upload = multer({ storage });
