@@ -29,6 +29,9 @@ app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 /* FILE STORAGE */
 const upload = multer({ storage });
 
+/* ROUTES */
+app.use("/auth", authRoutes);
+
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
 
