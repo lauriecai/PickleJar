@@ -9,29 +9,18 @@ const PostSchema = new mongoose.Schema(
     firstName: {
       type: String,
       required: true,
-      min: 2,
-      max: 50,
     },
     lastName: {
       type: String,
       required: true,
-      min: 2,
-      max: 50,
     },
     location: String,
     description: String,
-    userPicturePath: {
-      type: String,
-      default: "",
-    },
-    postPicturePath: {
-      type: String,
-      default: "",
-    },
+    userPicturePath: String,
+    postPicturePath: String,
     likes: {
-      type: Number,
-      required: true,
-      default: 0,
+      type: Map,
+      of: Boolean,
     },
   },
   { timestamps: true }
