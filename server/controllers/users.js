@@ -20,11 +20,10 @@ export const getUserFriends = async (req, res) => {
       user.friends.map((id) => User.findById(id))
     );
     const formattedFriends = friends.map(
-      ({ _id, firstName, lastName, occupation, location, picturePath }) => ({
+      ({ _id, firstName, lastName, location, picturePath }) => ({
         _id,
         firstName,
         lastName,
-        occupation,
         location,
         picturePath,
       })
@@ -44,10 +43,10 @@ export const addRemoveFriend = async (req, res) => {
 
     if (user.friends.includes(friendId)) {
       user.friends = user.friends.filter((id) => id !== friendId);
-      friend.friends = friend.friends.filter((id) => id !== userId);
+      friend.friends = friend.friends.filter((id) => id !== id);
     } else {
       user.friends.push(friendId);
-      friend.friends.push(userId);
+      friend.friends.push(id);
     }
 
     await user.save();
@@ -57,11 +56,10 @@ export const addRemoveFriend = async (req, res) => {
       user.friends.map((id) => User.findById(id))
     );
     const formattedFriends = friends.map(
-      ({ _id, firstName, lastName, occupation, location, picturePath }) => ({
+      ({ _id, firstName, lastName, location, picturePath }) => ({
         _id,
         firstName,
         lastName,
-        occupation,
         location,
         picturePath,
       })
