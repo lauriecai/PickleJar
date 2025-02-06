@@ -32,7 +32,6 @@ export const register = async (req, res) => {
       picturePath,
       friends,
       location,
-      occupation,
     } = req.body;
 
     const salt = await bcrypt.genSalt();
@@ -46,7 +45,6 @@ export const register = async (req, res) => {
       picturePath,
       friends,
       location,
-      occupation,
     });
     const savedUser = await newUser.save();
     res.status(201).json(savedUser);
