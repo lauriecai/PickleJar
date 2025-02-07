@@ -127,7 +127,7 @@ export const posts = [
     location: "Bakersfield, CA",
     description:
       "Early morning pickleball in Bakersfield hits different. The cool breeze, the sound of the paddle, and the rush of a perfect volley—nothing beats it!",
-    picturePath: "",
+    postPicturePath: "",
     userPicturePath: "",
     likes: new Map([
       [userIds[1], true],
@@ -143,7 +143,7 @@ export const posts = [
     location: "Bakersfield, CA",
     description:
       "I may or may not have challenged the chief to a pickleball match today... and won. Who’s next?",
-    picturePath: "",
+    postPicturePath: "",
     userPicturePath: "",
     likes: new Map([
       [userIds[0], true],
@@ -159,7 +159,7 @@ export const posts = [
     location: "Seattle, WA",
     description:
       "Played pickleball in the rain today. Slippery courts, tough serves, but absolutely worth it. Seattle never disappoints.",
-    picturePath: "",
+    postPicturePath: "",
     userPicturePath: "",
     likes: new Map([
       [userIds[5], true],
@@ -175,7 +175,7 @@ export const posts = [
     location: "Seattle, WA",
     description:
       "Pickleball at sunrise before heading into surgery—sharp reflexes, sharp mind. Nothing like starting the day with a solid rally! This beats fishing.",
-    picturePath: "",
+    postPicturePath: "",
     userPicturePath: "",
     likes: new Map([
       [userIds[2], true],
@@ -191,7 +191,7 @@ export const posts = [
     location: "Seattle, WA",
     description:
       "I don’t have time for this pickleball nonsense every day. Meredith stop getting me to play.",
-    picturePath: "",
+    postPicturePath: "",
     userPicturePath: "",
     likes: new Map([
       [userIds[3], true],
@@ -206,7 +206,7 @@ export const posts = [
     location: "Seattle, WA",
     description:
       "Took a group of kids from the hospital to play pickleball today.",
-    picturePath: "",
+    postPicturePath: "",
     userPicturePath: "",
     likes: new Map([
       [userIds[1], true],
@@ -221,7 +221,7 @@ export const posts = [
     location: "Seattle, WA",
     description:
       "Pickleball is all about control. You don't just hit the ball—you place it exactly where it needs to go. Same as running a hospital.",
-    picturePath: "",
+    postPicturePath: "",
     userPicturePath: "",
     likes: new Map([
       [userIds[2], true],
@@ -237,7 +237,7 @@ export const posts = [
     location: "Seattle, WA",
     description:
       "Pickleball reminds me a lot of medicine—quick decisions, smart positioning, and knowing when to go for the win.",
-    picturePath: "",
+    postPicturePath: "",
     userPicturePath: "",
     likes: new Map([
       [userIds[3], true],
