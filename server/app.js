@@ -58,8 +58,8 @@ mongoose
     app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 
     /* SEED DATA */
-    await User.insertMany(users);
-    await Post.insertMany(posts);
+    // await User.insertMany(users);
+    // await Post.insertMany(posts);
 
     // await User.deleteMany();
     // await Post.deleteMany();
